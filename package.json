@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "dev": "concurrently \"nodemon server.js\" \"cd client && cd gocode-shop && npm start\""
+    "dev": "concurrently \"nodemon server.js\" \"cd client && cd gocode-shop && npm start\"",
+    "render-postbuild": "cd client && cd gocode-shop && yarn install && yarn build"
   },
   "keywords": [],
   "author": "",
