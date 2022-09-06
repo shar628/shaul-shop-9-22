@@ -21,7 +21,7 @@ const Routing = () => {
             // const dataFromResponse = await response.json()
             // setProductData(dataFromResponse);
             // const productsUrl = "http://localhost:7000/api/products";
-            const productsUrl = "http://shaul-go-shop.onrender.com/api/products";
+            const productsUrl = "https://shaul-go-shop.onrender.com/api/products";
 
             const response = await axios.get(productsUrl);
             console.log(response)
