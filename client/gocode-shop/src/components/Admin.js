@@ -46,7 +46,7 @@ const Admin = ({ setProductData, categories }) => {
 
         const newProduct = { id: Date.now(), title, description, price, category, image: imageUrl }
         const productAdded = await axios({ method: 'post', url: 'https://shaul-go-shop.onrender.com/api/products', data: newProduct });
-        setProductData(prev => [productAdded, ...prev])
+        setProductData(prev => [productAdded.data, ...prev])
 
         setTitle('')
         setDescription('')
